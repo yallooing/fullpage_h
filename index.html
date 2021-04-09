@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full page slider - 수직방향</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="active"><a href="#">Page_1</a></li>
+            <li><a href="#">Page_2</a></li>
+            <li><a href="#">Page_3</a></li>
+            <li><a href="#">Page_4</a></li>
+            <li><a href="#">Page_5</a></li>
+            <li><a href="#">Page_6</a></li>
+            <li><a href="#">Page_7</a></li>
+        </ul>
+    </header>
+
+    
+
+    <!--
+        [Full page slider를 구성하는 조건]
+        1. 각 섹션 파트의 공간은 w100%, h100vh로 설정하여야 한다.
+        2. 마우스 휠을 돌렸을 때, 다음 페이지로 내려가거나 또는 이전 페이지로 올라가야한다. (자석처럼 화면의 전면 이동이 이뤄져야함) - mousewheel 이벤트 사용
+    -->
+    <main>
+        <section class="box active"><p>Page-1</p></section>
+        <section class="box"><p>Page-2</p></section>
+        <section class="box"><p>Page-3</p></section>
+        <section class="box"><p>Page-4</p></section>
+        <section class="box"><p>Page-5</p></section>
+        <section class="box"><p>Page-6</p></section>
+        <section class="box"><p>Page-7</p></section>
+    </main>
+    
+</body>
+</html>

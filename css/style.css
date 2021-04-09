@@ -1,0 +1,32 @@
+@charset "utf-8";
+*{box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+header, section, article, nav, main{display: block;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+
+body{overflow: hidden;}
+
+header{position: fixed; top:0; left:0; width: 100%; height: 60px; background: rgba(0,0,0,0.75); z-index: 3; /*transform:translateY(-100%);*/ transition: transform 0.5s;}
+
+header.show{transform:translateY(0);}  /*마우스 휠 이벤트로 접근을 한다면 delta = 음수값 나온다면 메뉴바가 보이도록 구성*/
+
+header ul{width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;}
+header ul li{margin: 0 10px;}
+header ul li a{display: block; color:#fff; font-size: 14px; font-weight: bold; text-transform: uppercase;}
+header ul li.active a{color:#ffcc00;}
+
+main{}
+main .box{width: 100%; height: 100vh; position: relative;}
+main .box:nth-child(1){background-color: red;}
+main .box:nth-child(2){background-color: orange;}
+main .box:nth-child(3){background-color: yellow;}
+main .box:nth-child(4){background-color: green;}
+main .box:nth-child(5){background-color: blue;}
+main .box:nth-child(6){background-color: purple;}
+main .box:nth-child(7){background-color: indigo;}
+main .box p{position: absolute; top:50%; left:-50%; color:#fff; font-size: 36px; transform:translate(-50%, -50%); transition:left 1s; transition-delay: 1s;}
+
+main .box.active p{left:50%; }
